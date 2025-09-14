@@ -16,7 +16,7 @@ import Post from './pages/Post'
 import AddPost from './pages/AddPost'
 import AllPosts from './pages/AllPosts'
 import EditPost from './pages/EditPost'
-import ThemeBtn from "./Header/themeBtn";
+import ThemeBtn from './Header/ThemeBtn'
 import ImageSlider from "./ImageSlider";
 import StartBtnArea from "./StartBtnArea";
 import ImageGallery from "./ImageGallery";
