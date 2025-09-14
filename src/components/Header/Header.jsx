@@ -57,7 +57,7 @@ export default function Header() {
               <div className="w-1/2 sm:max-w-1/10 overflow-hidden">
                 <Link
                   to="/"
-                  className="no-underline outline-none border-none focus:outline-none active:outline-none hover:no-underline"
+                  className="no-underline outline-none border-none focus:outline-none active:outline-none hover:no-underline "
                 >
                   <Logo width="100px" height="" className="max-h-8" />
                 </Link>

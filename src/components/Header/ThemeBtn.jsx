@@ -7,7 +7,7 @@ function ThemeBtn() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="h-full px-2  bg-red-600 text-white rounded-3xl cursor-pointer animate-pulse"
+      className="h-full px-2  bg-red-600 text-white rounded-3xl cursor-pointer animate-pulse shadow-lg"
     >
       <svg
         width="25"

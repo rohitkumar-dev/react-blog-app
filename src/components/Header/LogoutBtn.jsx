@@ -11,7 +11,7 @@ export default function LogoutBtn() {
         })
     }
   return (
-    <button onClick={logoutHandler} className='inline-block px-4  py-2 w-full font-medium rounded-lg bg-black text-white text-start cursor-pointer '>Logout</button>
+    <button onClick={logoutHandler} className='shadow-lg inline-block px-4  py-2 w-full font-medium rounded-lg bg-black text-white text-start cursor-pointer '>Logout</button>
   )
 }
 
