@@ -18,7 +18,10 @@ export default function Post() {
   useEffect(() => {
     if (slug) {
       service.getPost(slug).then((post) => {
-        if (post) setPost(post);
+        if (post) {
+          setPost(post);
+            console.log("POST CONTNET:: ", post.content);
+        }
         else navigate("/");
       });
     } else navigate("/");
@@ -40,6 +43,8 @@ export default function Post() {
     
   };
 
+
+  
   return post ? (
     <div className="">
       <SectionTag tagname={"Read Post"} />
@@ -70,10 +75,13 @@ export default function Post() {
             <h1 className="text-2xl font-bold pb-5 text-center">
               {post.title}
             </h1>
-            <div className="browser-css text-red-600 break-words">{parse(post.content)}</div>
+            <div className=" prose max-w-none text-red-600 break-words">{parse(post.content)}</div>
+            {/* <div dangerouslySetInnerHTML={{ __html: post.content }} /> */}
           </div>
         </Container>
       </div>
     </div>
   ) : null;
 }
+
+// browser-css text-red-600 break-words
