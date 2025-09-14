@@ -17,7 +17,7 @@ export default function AuthCallback() {
     async function fetchUser() {
       try {
         const userData = await authService.handleGoogleCallback(userId, secret);
-        console.log("userData:::: ", userData);
+        //console.log("userData:::: ", userData);
 
         if (userData) {
           dispatch(authLogin(userData));

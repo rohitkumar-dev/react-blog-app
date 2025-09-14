@@ -70,8 +70,8 @@ export class AuthService {
     try {
       return this.account.createOAuth2Token({
         provider: OAuthProvider.Google,
-        success: "http://localhost:5173/auth/callback",
-        failure: "http://localhost:5173/login",
+        success: "https://react-blog-app-sable-mu.vercel.app/auth/callback",
+        failure: "https://react-blog-app-sable-mu.vercel.app/login",
       });
     } catch (err) {
       throw err;

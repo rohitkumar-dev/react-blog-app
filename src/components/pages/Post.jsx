@@ -70,7 +70,7 @@ export default function Post() {
             <h1 className="text-2xl font-bold pb-5 text-center">
               {post.title}
             </h1>
-            <div className="browser-css text-red-600">{parse(post.content)}</div>
+            <div className="browser-css text-red-600 break-words">{parse(post.content)}</div>
           </div>
         </Container>
       </div>

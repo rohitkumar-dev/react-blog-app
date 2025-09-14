@@ -36,7 +36,7 @@ function Signup() {
     } catch (error) {
       //setError(error.message)
       setProcessing(false)
-      setError("Invalid input details");
+      setError("Invalid input details, try with Google or later");
     }
   };
 
