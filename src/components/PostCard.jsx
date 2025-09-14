@@ -5,7 +5,7 @@ import parse from "html-react-parser/lib/index";
 
 export default function PostCard({ $id, title, featuredImage, content }) {
   return (
-    <div className=" w-full bg-red-300 rounded-lg overflow-hidden  ">
+    <div className=" w-full bg-red-300 rounded-lg overflow-hidden  shadow-lg">
       <div
         className="w-full h-50 sm:h-60 justify-center  "
       >

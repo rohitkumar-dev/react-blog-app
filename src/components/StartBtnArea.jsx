@@ -11,7 +11,7 @@ function StartBtnArea() {
         Inspire others by sharing your realistic experience
       </p>
       <div className="sm:w-1/3 sm:h-full sm:my-auto mx-auto">
-        <button className="py-3 px-5  my-auto bg-red-600 text-white rounded-lg">
+        <button className="py-3 px-5  my-auto bg-red-600 text-white rounded-lg shadow-lg">
           <NavLink to={`${authStatus ? "/add-post" : "/login"}`}>
             Start writing
           </NavLink>

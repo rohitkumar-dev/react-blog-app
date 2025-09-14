@@ -100,7 +100,7 @@ export default function Header() {
                           className={({ isActive }) =>
                             `${
                               isActive ? "text-white bg-red-600" : ""
-                            } inline-block w-full px-4 py-2 font-medium text-red-900 bg-red-300 rounded-md `
+                            } inline-block w-full px-4 py-2 font-medium text-red-900 bg-red-300 rounded-lg shadow-lg`
                           }
                         >
                           {item.name}
