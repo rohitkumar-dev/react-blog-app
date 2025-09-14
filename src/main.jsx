@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import Home from "./components/pages/Home.jsx";
 import { AuthLayout, Login } from "./components/index.js";
 
@@ -24,6 +24,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Navigate to="/" replace />,
     children: [
       {
         path: "/",
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
       {
         path: "/auth/callback",
         element: <AuthCallback />,
+      },
+      { 
+        path: "*", 
+        element: <Navigate to="/" replace />
       },
     ],
   },
