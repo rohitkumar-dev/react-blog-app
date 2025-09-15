@@ -67,7 +67,7 @@ export default function Header() {
                 <button className="" onClick={() => setMenu(!menu)}>
                   {menu ? (
                     <svg
-                      className={` h-8 w-8 p-1 bg-red-600 text-white border border-red-600 rounded-sm `}
+                      className={` h-8 w-8 p-1 bg-red-600 text-white border border-red-600 rounded-lg `}
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 640 640"
                     >
@@ -78,7 +78,7 @@ export default function Header() {
                     </svg>
                   ) : (
                     <svg
-                      className={` h-8 w-8 p-1 bg-red-600 text-white border border-red-600 rounded-sm `}
+                      className={` h-8 w-8 p-1 bg-red-600 text-white border border-red-600 rounded-lg `}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
