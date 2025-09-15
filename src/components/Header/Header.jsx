@@ -64,7 +64,7 @@ export default function Header() {
               </div>
 
               <div className="w-1/2 flex justify-end sm:hidden ">
-                <button className="transition-all duration-200" onClick={() => setMenu(!menu)} >
+                {/* <button className="transition-all duration-200" onClick={() => setMenu(!menu)} >
                   {menu ? (
                     <svg className={` h-8 w-8 p-1 bg-red-600 text-white border border-red-600 rounded-sm `} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                       <path fill="#ffffff" d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>
@@ -83,7 +83,31 @@ export default function Header() {
                       />
                     </svg>
                   )}
-                </button>
+                </button> */}
+
+                <button className="h-8 w-8 p-1 bg-red-600 text-white border border-red-600 rounded-lg"
+  
+  onClick={() => setMenu(!menu)}
+>
+  <div className={` transition-all duration-600 ${
+    menu ? "rotate-180" : "rotate-0"
+  }`}>
+  {menu ? (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className="h-full w-full">
+      <path
+        fill="#ffffff"
+        d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"
+      />
+    </svg>
+  ) : (
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-full w-full">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  )}
+</div>
+
+</button>
+
                 <div className="ml-3">
                   <ThemeBtn />
                 </div>
